@@ -1,0 +1,17 @@
+JDK:JAVA 开发工具包
+JRE:JAVA 运行环境
+
+命令：javac编译命令  java 运行命令
+
+执行过程： .java文件经过javac命令编译后得到.class文件，然后再通过java命令运行得到结果。
+
+安装jdk: 去Oracle官网下载jdk，运新安装包，下一步安装即可。
+检测jdk安装正确：Windows+R  cmd 打开dos窗口，在dos窗口通过cd命令进入jdk的安装路径中，到bin那一层即可。例如：cd C:\Program Files\Java\jdk-11.0.1\bin  ；
+然后用命令 javac java 运行出现大段文字即安装成功。
+
+问题：如何使javac和java命令在任意盘符任意路径下使用？
+配置环境变量：打开我的电脑属性 进入高级设置-高级-环境变量
+点击新建：变量名：JAVA_HOME  变量值：JDK安装路径，bin前一层 确定。
+找到path，双击path编辑，在path变量值的位置加上：%JAVA_HOME%\bin;
+
+JAVA 语言本身不跨平台，它是通过JVM虚拟机实现跨平台。
